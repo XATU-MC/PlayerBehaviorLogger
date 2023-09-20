@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "playerbehaviorlogger",
+  "version": "${version}",
+  "name": "PlayerBehaviorLogger",
+  "description": "A logger that can record player behavior",
+  "authors": [
+    "XATUCraft"
+  ],
+  "contact": {
+    "repo": "https://github.com/XATU-MC/PlayerBehaviorLogger"
+  },
+  "license": "LGPL-3.0",
+  "icon": "assets/playerbehaviorlogger/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.xatumc.playerbehaviorlogger.PlayerBehaviorLogger"
+    ]
+  },
+  "mixins": [
+    "playerbehaviorlogger.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
